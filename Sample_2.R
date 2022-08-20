@@ -4,14 +4,14 @@
 d = read.csv(file.choose()) #We are still working with the gss file, but instead of naming it "gss", we are naming it "d". 
 
 #Many times we want to re-code a continuous variable (i.e., one that can take on many variables between a given range. For example, height or weight).
-
 #The simplest way is to make a dummy or binary variable, which takes one of two responses - either 0 or 1, for example. 
 
 d$hi.attend = ifelse((d$attend>4), 1, 0) #
+
 #Above is a binary re-code. We are saying: for those who respond to the following,"How often do you attend religious services?" 
 #as 4x or more, you are assigned as 1. For all other response types, you are assigned as a 0. 
 
-table(d$hi.attend, d$attend) #Here we are checking the re-coding. 0 shoudl appear for all categories less than 4, and 1 should appear for everything greater than or equal to 4.
+table(d$hi.attend, d$attend) #Here we are checking the re-coding. 0 should appear for all categories less than 4, and 1 should appear for everything greater than or equal to 4.
 
 #Sometimes we want to do more. For example, break a variable into categories. 
 #We can create a number of categories for religious attendance: weak, moderate, and strong. Note: these are categories that I am using my judgement to make. 
