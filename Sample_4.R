@@ -1,7 +1,3 @@
-
-
-##2. Add an interaction term to that model that you think might moderate the original relationship between X1 and X2.  Explain why you think an interaction might be present and in what direction it would work.  Explain your results.  Did it work out?  Yes?  No?  
-
 #Run a simple regression:
 w = read.csv(file.choose()) #Using WVS again, naming the data variable "w". 
 
